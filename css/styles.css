@@ -3102,8 +3102,8 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn-success, .btn-success:focus {
   color: #fff;
-  background-color: #157347;
-  border-color: #146c43;
+  background-color: #146c43;
+  border-color: #157347;
   box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
 }
 .btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
