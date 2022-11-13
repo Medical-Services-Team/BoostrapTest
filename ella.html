@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--引入css的方式：https://medium.com/@small2883/css-%E7%9A%84%E4%B8%89%E7%A8%AE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B-58dc7570bb9c-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top border" style="padding: 0px;">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#page-top">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#card">card</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="border">
+        <!-- home-->
+        <section class="resume-section" id="home">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    測試
+                    <span class="text-primary">測試</span>
+                </h1>
+                <div class="subheading mb-5">
+                    協作和練習
+                </div>
+                <p class="lead mb-5">大家加油！練習協作，和複習bootstrap</p>
+            </div>
+        </section>
+        <hr class="m-0 border" />
+        <!-- 建置一般的card -->
+        <section class="resume-section" id="card">
+            <div class="resume-section-content">
+                <h2 class="mb-5">建置一般的card</h2>
+                <div class=" d-flex flex-md-row">
+                    <div class=" card" style="width: 15rem;margin: 10px;">
+                        <img src="https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png"
+                            class="card-img-top" alt="...">
+                        <div>
+                            <h5 class="card-title" value="example">
+                                心臟
+                            </h5>
+                            <div class="d-flex flex-md-row">
+                                <p class="card-text">位成員</p>
+                                <p class="card-text">.</p>
+                                <p class="card-text">則貼文</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 用js跑迴圈 -->
+        <!-- js教材:https://hsuchihting.github.io/javascript/20200709/3285756052/ -->
+        <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
+        <section class="resume-section" id="card">
+            <div class="resume-section-content">
+                <h2 class="mb-5">用js跑迴圈的card</h2>
+                <div class="cardList d-flex flex-md-row">
+                </div>
+                <script>
+                    //JSON 資料
+                    var data = [
+                        {
+                            cardImg: 'https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png',
+                            name: '心臟',
+                            member: '12',
+                            pages: '233',
+                        },
+                        {
+                            cardImg: 'https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png',
+                            name: '心臟',
+                            member: '11',
+                            pages: '12313'
+                        }
+                    ]
+                    //變數
+                    var el = document.querySelector('.cardList');
+                    var dataLen = data.length; //資料長度
+                    var str = "" //建立一個空字串，要將資料填入的
+                    // for 迴圈
+                    for (var i = 0; i < dataLen; i++) {
+                        var Img = '<div class="card" style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
+                        var name = '<h5 class="card-title" value="example">' + data[i].name + '</h5>'; //組字串
+                        var members = '<div class="d-flex flex-md-row"><p class="card-text">' + data[i].member + '位成員</p><p class="card-text">.</p>';
+                        var pages = '<p class="card-text">' + data[i].pages + '則貼文</p></div>'
+                        var buttons = '<a href="#" class="btn btn-primary">Go somewhere</a></div>'
+                        str += [Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
+                    }
+                    el.innerHTML = str;
+            //透過 el 選取到的 list，透過 innerHTML 的方式，把 str 裡的資料渲染到網頁上
+                </script>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
