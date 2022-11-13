@@ -51,23 +51,17 @@
             </div>
         </section>
         <hr class="m-0 border" />
-        <!-- card-->
+        <!-- 建置一般的card -->
         <section class="resume-section" id="card">
             <div class="resume-section-content">
-                <h2 class="mb-5">card</h2>
+                <h2 class="mb-5">建置一般的card</h2>
                 <div class=" d-flex flex-md-row">
                     <div class=" card" style="width: 15rem;margin: 10px;">
                         <img src="https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png"
                             class="card-img-top" alt="...">
                         <div>
                             <h5 class="card-title" value="example">
-                                <script>
-                                    // 由 for 迴圈http://mirlab.org/jang/books/javascript/control-loop.asp?title=2-2%20%B0j%B0%E9%B1%D4%ADz"
-                                    let listnames = ['心臟', '外科', '家醫科', 'bpads', 'ajdksak']
-                                    for (i = 0; i <= listname.length; i++) {
-                                        document.write("<font>" + listname[i] + "</font><br>");
-                                    }
-                                </script>
+                                心臟
                             </h5>
                             <div class="d-flex flex-md-row">
                                 <p class="card-text">位成員</p>
@@ -78,23 +72,28 @@
                         </div>
                     </div>
                 </div>
+        </section>
 
-
+        <!-- 用js跑迴圈 -->
+        <section class="resume-section" id="card">
+            <div class="resume-section-content">
+                <h2 class="mb-5">用js跑迴圈的card</h2>
                 <div class="cardList d-flex flex-md-row">
-                    <div class="card" style="width: 15rem;margin: 10px;">
-                        <!-- <div class="cardList"></div> -->
-                    </div>
                 </div>
                 <script>
                     //JSON 資料
                     var data = [
                         {
                             cardImg: 'https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png',
-                            name: '心臟'
+                            name: '心臟',
+                            member: '12',
+                            pages: '233',
                         },
                         {
                             cardImg: 'https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png',
-                            name: '心臟'
+                            name: '心臟',
+                            member: '11',
+                            pages: '12313'
                         }
                     ]
                     //變數
@@ -103,13 +102,17 @@
                     var str = "" //建立一個空字串，要將資料填入的
                     // for 迴圈
                     for (var i = 0; i < dataLen; i++) {
-                        var content = '<img src=' + data[i].cardImg + 'class="card-img-top" alt="...">'; //組字串
+                        var Img = '<div class="card" style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
                         var name = '<h5 class="card-title" value="example">' + data[i].name + '</h5>'; //組字串
-                        str += [content + name]; // 透過加總把 變數 content 的內容回傳到 str 中
+                        var members = '<div class="d-flex flex-md-row"><p class="card-text">' + data[i].member + '位成員</p><p class="card-text">.</p>';
+                        var pages = '<p class="card-text">' + data[i].pages + '則貼文</p></div>'
+                        var buttons = '<a href="#" class="btn btn-primary">Go somewhere</a></div>'
+                        str += [Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
                     }
                     el.innerHTML = str;
             //透過 el 選取到的 list，透過 innerHTML 的方式，把 str 裡的資料渲染到網頁上
                 </script>
+            </div>
         </section>
     </div>
 </body>
