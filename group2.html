@@ -118,5 +118,47 @@
         </section>
     </div>
 </body>
-
-</html>
+    
+        <!-- 用js跑迴圈 -->
+        <!-- js教材:https://hsuchihting.github.io/javascript/20200709/3285756052/ -->
+        <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
+        <section class="resume-section" id="card1">
+             <div class="resume-section-content">
+                <h2 class="mb-5">書寧用js跑迴圈的card</h2>
+                <div class="card1List d-flex flex-md-row">
+                </div>
+                <script>
+                   var data = [
+                        {
+                            cardImg: 'https://askthescientists.com/wp-content/uploads/2021/01/AdobeStock_313580715-2048x1297.jpeg',
+                            name: '胃',
+                            member: '10',
+                            pages: '200',
+                        },
+                        {
+                            cardImg: 'https://askthescientists.com/wp-content/uploads/2021/01/AdobeStock_313580715-2048x1297.jpeg',
+                            name: '胃',
+                            member: '35',
+                            pages: '12000'
+                        }
+                    ]
+                     //變數
+                     var el = document.querySelector('.card1List');
+                    var dataLen = data.length; //資料長度
+                    var str = "" //建立一個空字串，要將資料填入的
+                    // for 迴圈
+                    for (var i = 0; i < dataLen; i++) {
+                        var Img = '<div class="card1" style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
+                        var name = '<h5 class="card1-title" value="example">' + data[i].name + '</h5>'; //組字串
+                        var members = '<div class="d-flex flex-md-row"><p class="card-text">' + data[i].member + '位成員</p><p class="card-text">.</p>';
+                        var pages = '<p class="card1-text">' + data[i].pages + '則貼文</p></div>'
+                        var buttons = '<a href="#" class="btn btn-primary">Go somewhere</a></div>'
+                        str += [Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
+                    }
+                    el.innerHTML = str;
+            //透過 el 選取到的 list，透過 innerHTML 的方式，把 str 裡的資料渲染到網頁上
+                </script>
+            </div>
+        </section>
+    </div>
+</body>
