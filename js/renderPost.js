@@ -1,14 +1,15 @@
 const handleGetData = async (filename) => {
     const jsonData = await fetch(filename);
     const data = await jsonData.json();
-    console.log(data);
+    // console.log(data);
     return data
 };
 
 const handleRenderPosts = async () => {
     const posts = await handleGetData(
-        "info.json"
+        './js/info.json'
     );
+    // console.log(posts);
     let content = "";
     posts.forEach((i, index) => {
         content += `
@@ -37,7 +38,7 @@ const handleRenderPosts = async () => {
 </a>
     `;
     });
-    document.getElementById("postsResult").innerHTML = content;
+    document.querySelector(".cardList").innerHTML = content;
 }
 
 window.onload = () => {
