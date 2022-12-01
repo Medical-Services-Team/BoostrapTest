@@ -103,12 +103,13 @@
                                     str += '<div style="flex:1;display:flex;;">123</div>'
                                     str += '<div style="flex:12;display:flex;flex-direction: column;">'
                                     str += '<h6>李小米</h6>'
-                                    str += '<p style="font-size: 10px;color:gray;">'+Today.getFullYear()+','+monthNames[Today.getMonth()]+'</p>';
-                                    str += '<p style="font-size: 10px;color:gray;">'+Today.getDate()+','+Today.getHours()+':'+Today.getMinutes()+':'+Today.getSeconds()+'</p>';
+                                    str += '<p style="font-size: 10px;color:gray;">'+Today.getFullYear()+','+monthNames[Today.getMonth()]+Today.getDate()+'</p>';
+                                    str += '<p style="font-size: 10px;color:gray;">'+Today.getHours()+':'+Today.getMinutes()+':'+Today.getSeconds()+'</p>';
                                     str += '<p>'+content.value+'</p>'
                                     str += '</div></div>'
                                     var el = document.querySelector('.commentContent');
                                     el.innerHTML = str + el.innerHTML;
+                                    content.value = '';
                                 }
                             </script>
                         <button type="button" class="btn btn-primary" style="display:flex;flex:1;" onclick="AddComment()">Comment</button>
