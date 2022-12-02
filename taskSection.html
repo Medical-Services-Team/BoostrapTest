@@ -42,7 +42,7 @@
     </nav>
     <!-- Navbar end-->
     <!--navsTab-->
-    <div class="mt-5 clearfix">...</div>
+    <div class=" mt-6 clearfix"></div>
     <div class="shadow-sm">
         <ul class="nav sticky-top justify-content-center nav-pills">
             <!-- <li class="nav-item">
@@ -91,7 +91,7 @@
         <!-- 用js跑迴圈 -->
         <!-- js教材:https://hsuchihting.github.io/javascript/20200709/3285756052/ -->
         <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
-        <h2 class="fs-3 text-center">探索討論區</h2>
+        <h2 class="fs-3 mt-3 text-center">探索討論區</h2>
         <section class="" id="card">
             <div class="d-flex flex-md-row resume-section-content">
                 <div class="columns cardList">
@@ -100,22 +100,22 @@
                     //JSON 資料
                     var data = [
                         {
-                            cardImg: 'https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png',
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/氣喘.png',
                             name: '氣喘',
-                            member: '200',
+                            member: '266',
                             pages: '48',
                         },
                         {
-                            cardImg: 'https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png',
-                            name: '心臟',
-                            member: '11',
-                            pages: '12313'
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/急性心肌梗塞.png',
+                            name: '急性心肌梗塞',
+                            member: '266',
+                            pages: '68'
                         },
                         {
-                            cardImg: 'https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png',
-                            name: '心臟',
-                            member: '11',
-                            pages: '12313'
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/人工膝關節手術.png',
+                            name: '人工膝關節手術',
+                            member: '266',
+                            pages: '38'
                         },
                         {
                             cardImg: 'https://heho.com.tw/wp-content/uploads/2019/06/190614-%E5%BF%83%E6%88%BF%E9%A1%AB%E5%8B%95.png',
@@ -195,11 +195,11 @@
                             document.write(i+"<br>")
                             count=console.count(i)
                         }
-                        var Img = '<div class="card" style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
+                        var Img = '<div class="card " style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
                         var name = '<h5 class="card-title" value="example">' + data[i].name + '</h5>'; //組字串
                         var members = '<div class="d-flex flex-md-row"><p class="card-text">' + data[i].member + ' 位成員</p><p class="card-text">.</p>';
                         var pages = '<p class="card-text">' + data[i].pages + '則貼文</p></div>'
-                        var buttons = '<a href="#" class="btn btn-primary">尚未解鎖</a></div>'
+                        var buttons = '<a href="#" class="btn btn-success rounded-pill"><img width="10%" height="10%" src="../BoostrapTest/assets/img/taskSectionImg/coin.png"> 尚未解鎖</a></div>'
                         str += [Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
                         
                     }
