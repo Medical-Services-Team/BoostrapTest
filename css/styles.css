@@ -3059,7 +3059,16 @@ textarea.form-control-lg {
   background-color: #bd5d38;
   border-color: #bd5d38;
 }
-
+.btn-task{
+  color: #fff;
+  background-color:#1B4173;
+  border-color: #1B4173;
+}
+.btn-task:hover{
+  color: #fff;
+  background-color:#4D78B1;
+  border-color:#4D78B1;
+}
 .btn-secondary {
   color: #fff;
   background-color: #6c757d;
