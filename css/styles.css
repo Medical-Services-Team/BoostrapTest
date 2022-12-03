@@ -3092,12 +3092,12 @@ textarea.form-control-lg {
 
 .btn-success {
   color: #fff;
-  background-color: #00A300;;
-  border-color: #00A300;;
+  background-color: #198754;
+  border-color: #157347;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #157347;
+  background-color: #146c43;
   border-color: #157347;
 }
 .btn-check:focus + .btn-success, .btn-success:focus {
@@ -7325,9 +7325,7 @@ textarea.form-control-lg {
 .mt-5 {
   margin-top: 3rem !important;
 }
-.mt-6 {
-  margin-top: 4rem !important;
-}
+
 .mt-auto {
   margin-top: auto !important;
 }
