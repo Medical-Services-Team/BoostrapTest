@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--引入css的方式：https://medium.com/@small2883/css-%E7%9A%84%E4%B8%89%E7%A8%AE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B-58dc7570bb9c-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>taskSection</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top border" style="padding: 0px;">
+    <!-- Navbar start-->
+    <nav class="d-flex justify-end navbar container-fluid navbar-expand-lg navbar-light bg-light fixed-top">
+        <div>
+        <a class="navbar-brand" href="#page-top">
+            <img src="../BoostrapTest/assets/img/taskSectionImg/醫療好評網Logo.png" alt="" width="100" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-text">
+               醫生/醫院帳號由此登入
+            </span>
+        </div>
+    </nav>
+    <!-- Navbar end-->
+    <!--navsTab-->
+    <div class=" mt-6 clearfix"></div>
+    <div class="shadow-sm">
+        <ul class="nav sticky-top justify-content-center nav-pills">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">搜尋</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">比較</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">常見問題</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">文章</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">討論區</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">任務/成就</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">個人成就</a></li>
+                <li><a class="dropdown-item" href="#">完成成就</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+          </ul>
+    </div>
+    <!--navsTab-->
+    <!-- Page Content-->
+    <div class="border">
+        <!-- home-->
+        <!-- 用js跑迴圈 -->
+        <!-- js教材:https://hsuchihting.github.io/javascript/20200709/3285756052/ -->
+        <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
+        <h2 class="fs-3 mt-3 text-center" style="color:#34558B">探索討論區</h2>
+        <section class="" id="card">
+            <div class="d-flex flex-md-row resume-section-content">
+                <div class="d-flex flex-md-row cardList">
+                </div>
+                <!-- <div class="resume-section-content">
+                  <h2 class="mb-5">誼萱用js跑迴圈的card</h2>
+                  <div class="cardList d-flex flex-md-row">
+                  </div> -->
+                <script>
+                    //JSON 資料
+                    var data = [
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/氣喘.png',
+                            name: '氣喘',
+                            member: '266',
+                            pages: '48',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/急性心肌梗塞.png',
+                            name: '急性心肌梗塞',
+                            member: '266',
+                            pages: '68',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/人工膝關節手術.png',
+                            name: '人工膝關節手術',
+                            member: '266',
+                            pages: '38',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/腦中風.png',
+                            name: '腦中風',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/子宮肌瘤手術.png',
+                            name: '子宮肌瘤手術',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/消化性潰瘍.png',
+                            name: '消化性潰瘍',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/血液透析.png',
+                            name: '血液透析',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/腹膜透析.png',
+                            name: '腹膜透析',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/慢性腎臟病.png',
+                            name: '慢性腎臟病',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/骨質酥鬆.png',
+                            name: '骨質酥鬆',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/創傷.png',
+                            name: '創傷',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/腫瘤.png',
+                            name: '腫瘤',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/斜視.png',
+                            name: '斜視',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/打鼾.png',
+                            name: '打鼾',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        },
+                        {
+                            cardImg: '../BoostrapTest/assets/img/taskSectionImg/AA.png',
+                            name: 'AA',
+                            member: '11',
+                            pages: '12313',
+                            points: '150'
+                        }
+                    ]
+                    //變數
+                    var el = document.querySelector('.cardList');
+                    var dataLen = data.length; //資料長度
+                    var str = "" //建立一個空字串，要將資料填入的
+                    var count = 0
+                    // for 迴圈
+                    for (var i = 0; i < dataLen; i++) {
+                        if (i%3==0){
+                            document.write(i+"<br>")
+                            count=console.count(i)
+                        }
+                        var Img = '<div class="card " style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
+                        var name = '<h5 class="card-title m-2" value="example">' + data[i].name + '</h5>'; //組字串
+                        var members = '<div class="d-flex flex-md-row m-2"><p class="card-text">' + data[i].member + ' 位成員</p><p class="card-text"> . </p>';
+                        var pages = '<p class="card-text">' + data[i].pages + ' 則貼文</p></div>'
+                        var buttons = '<a href="#" class="btn btn-success rounded-pill m-2"><img width="10%" height="10%" src="../BoostrapTest/assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div>'
+                        str += [Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
+                        
+                    }
+                    el.innerHTML = str;
+            //透過 el 選取到的 list，透過 innerHTML 的方式，把 str 裡的資料渲染到網頁上
+                </script>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+    
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-black text-white">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4">
+     
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-white fw-bold mb-4">
+                關於我們
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">關於我們</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">隱私政策</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">服務條款</a>
+              </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-white fw-bold mb-4">
+              搜尋連結
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">找醫生</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">找醫療結構</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">找科別</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">找疾病或手術</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-white fw-bold mb-4">聯絡資訊</h6>
+            <p>
+                <a href="#!" class="text-reset">意見回饋</a>
+              </p>
+            <p><i class="fas fa-envelope me-3"></i> fjuph316@gmail.com</p>
+            <p>
+              <i class="fas fa-phone me-3"></i>
+              02-2905343
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+  <!-- Footer -->
+    </div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
