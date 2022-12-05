@@ -34,7 +34,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         </div>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="collapse navbar-collapse" id="navbarText" style="justify-content: flex-end">
             <span class="navbar-text">
                醫生/醫院帳號由此登入
             </span>
@@ -93,8 +93,8 @@
         <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
         <h2 class="fs-3 mt-3 text-center" style="color:#34558B">探索討論區</h2>
         <section class="" id="card">
-            <div class="d-flex flex-md-row resume-section-content">
-                <div class="d-flex flex-md-row cardList">
+            <div class="d-flex flex-md-row resume-section-content" style="justify-content: center;">
+                <div class="d-flex flex-md-column cardList">
                 </div>
                 <!-- <div class="resume-section-content">
                   <h2 class="mb-5">誼萱用js跑迴圈的card</h2>
@@ -216,16 +216,16 @@
                     var count = 0
                     // for 迴圈
                     for (var i = 0; i < dataLen; i++) {
-                        if (i%3==0){
-                            document.write(i+"<br>")
-                            count=console.count(i)
+                        var Row = "";
+                        if(i%3==0){
+                          Row = '<div class="d-flex flex-md-row cardList">'
                         }
                         var Img = '<div class="card " style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
                         var name = '<h5 class="card-title m-2" value="example">' + data[i].name + '</h5>'; //組字串
                         var members = '<div class="d-flex flex-md-row m-2"><p class="card-text">' + data[i].member + ' 位成員</p><p class="card-text"> . </p>';
                         var pages = '<p class="card-text">' + data[i].pages + ' 則貼文</p></div>'
-                        var buttons = '<a href="#" class="btn btn-task rounded-pill m-2"><img width="10%"  src="../BoostrapTest/assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div>'
-                        str += [Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
+                        var buttons = i%3==2?'<a href="#" class="btn btn-task rounded-pill m-2"><img width="10%"  src="../BoostrapTest/assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div></div>':'<a href="#" class="btn btn-task rounded-pill m-2"><img width="10%"  src="../BoostrapTest/assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div>'
+                        str += [ Row + Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
                         
                     }
                     el.innerHTML = str;
