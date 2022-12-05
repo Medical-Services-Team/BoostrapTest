@@ -65,9 +65,14 @@
                 <ul class=" navbar-nav mb-2 mb-lg-0" style="display: flex;margin-top: 30px;">
                     <li class="nav-item active"><a class="nav-link disabled" style="color:white ">好評小天地</a></li>
                     <li class="nav-item"><a class="nav-link " href="#" style="color:white ;">探索討論區</a></li>
-                    <li class="nav-item"><a class="nav-link " href="#" style="color:white ;">我的討論區 </a></li>
-                    <li class="nav-item"><a class="nav-link " href="#" style="color:white ;">糖尿病</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" style="color:white ;">鼻竇炎</a></li>
+                    <details>
+                        <summary style="color:white ;">我的討論區
+                        </summary>              
+                        <ul style="color: white">
+                            <li class="nav-item"><a class="nav-link " href="#" style="color:white ;">糖尿病</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" style="color:white ;">鼻竇炎</a></li>
+                        </ul>
+                    </details>
                 </ul>
             </div>
         </nav>
@@ -88,40 +93,61 @@
                         <div style="flex:1;display:flex;">123</div>
                         <input type="text" class="form-control" id="formGroupExampleInput"
                             placeholder="Example input placeholder" style="display:flex;flex:12;margin-right: 10px;">
-                        <button type="button" class="btn btn-primary" style="display:flex;flex:1;">Primary</button>
+                            <script language="javascript">
+                                function AddComment(){
+                                    var content = document.querySelector('#formGroupExampleInput');
+                                    var Today = new Date();
+                                    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December']
+                                    var str = '';
+                                    str += '<div class=" card" style="display:flex;flex:1;height: auto;border-radius: 10px;margin-top:30px;margin-right:30px;flex-direction: row;padding: 20px;">'
+                                    str += '<div style="flex:1;display:flex;;">123</div>'
+                                    str += '<div style="flex:12;display:flex;flex-direction: column;">'
+                                    str += '<h6>李小米</h6>'
+                                    str += '<p style="font-size: 10px;color:gray;">'+Today.getFullYear()+','+monthNames[Today.getMonth()]+Today.getDate()+'</p>';
+                                    str += '<p style="font-size: 10px;color:gray;">'+Today.getHours()+':'+Today.getMinutes()+':'+Today.getSeconds()+'</p>';
+                                    str += '<p>'+content.value+'</p>'
+                                    str += '</div></div>'
+                                    var el = document.querySelector('.commentContent');
+                                    el.innerHTML = str + el.innerHTML;
+                                    content.value = '';
+                                }
+                            </script>
+                        <button type="button" class="btn btn-primary" style="display:flex;flex:1;" onclick="AddComment()">Comment</button>
                     </div>
-                    <div class=" card"
-                        style="display:flex;flex:1;height: auto;border-radius: 10px;margin-top:30px;margin-right:30px;flex-direction: row;padding: 20px;">
-                        <div style="flex:1;display:flex;;">123</div>
-                        <div style="flex:12;display:flex;flex-direction: column;">
-                            <h6>李小米</h6>
-                            <p style="font-size: 10px;color:gray;">5天前</p>
-                            <div style="display: flex;flex-direction:row;">
-                                <div
-                                    style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px;">
-                                    # 胃痛
+                    <div class = "commentContent">
+                        <div class=" card"
+                            style="display:flex;flex:1;height: auto;border-radius: 10px;margin-top:30px;margin-right:30px;flex-direction: row;padding: 20px;">
+                            <div style="flex:1;display:flex;;">123</div>
+                            <div style="flex:12;display:flex;flex-direction: column;">
+                                <h6>李小米</h6>
+                                <p style="font-size: 10px;color:gray;">5天前</p>
+                                <div style="display: flex;flex-direction:row;">
+                                    <div
+                                        style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px;">
+                                        # 胃痛
+                                    </div>
+                                    <div
+                                        style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px">
+                                        # 腸胃炎
+                                    </div>
                                 </div>
-                                <div
-                                    style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px">
-                                    # 腸胃炎
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur. Ut ultricies ante sem rutrum et nunc cras mauris
-                                nisi. Curabitur enim cras tincidunt quisque fermentum. Malesuada nisl cursus fermentum
-                                consectetur fames at urna. Habitasse nibh hac neque urna risus eu elit molestie odio.
-                                Massa varius eu commodo rutrum platea nulla. Neque non tellus dolor malesuada diam
-                                gravida phasellus amet ac. Sed hendrerit lacus morbi aenean enim egestas. Urna sem
-                                integer velit vitae. Arcu non quam in enim tortor congue urna egestas. Consectetur netus
-                                porttitor donec senectus et felis mauris. Odio ac sapien velit vestibulum. Ut leo nullam
-                                blandit vitae. </p>
-                            <div style="display: flex;flex-direction:row;">
-                                <div
-                                    style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px;">
-                                    # 讚讚icon
-                                </div>
-                                <div
-                                    style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px">
-                                    # 留言icon
+                                <p>Lorem ipsum dolor sit amet consectetur. Ut ultricies ante sem rutrum et nunc cras mauris
+                                    nisi. Curabitur enim cras tincidunt quisque fermentum. Malesuada nisl cursus fermentum
+                                    consectetur fames at urna. Habitasse nibh hac neque urna risus eu elit molestie odio.
+                                    Massa varius eu commodo rutrum platea nulla. Neque non tellus dolor malesuada diam
+                                    gravida phasellus amet ac. Sed hendrerit lacus morbi aenean enim egestas. Urna sem
+                                    integer velit vitae. Arcu non quam in enim tortor congue urna egestas. Consectetur netus
+                                    porttitor donec senectus et felis mauris. Odio ac sapien velit vestibulum. Ut leo nullam
+                                    blandit vitae. </p>
+                                <div style="display: flex;flex-direction:row;">
+                                    <div
+                                        style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px;">
+                                        # 讚讚icon
+                                    </div>
+                                    <div
+                                        style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px">
+                                        # 留言icon
+                                    </div>
                                 </div>
                             </div>
                         </div>
