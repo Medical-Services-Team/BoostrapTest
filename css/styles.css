@@ -3032,13 +3032,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #1B4173;
+  border-color: #1B4173;
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #c77556;
-  border-color: #c46d4c;
+  background-color: #4D78B1;
+  border-color: #4D78B1;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #000;
@@ -5033,7 +5033,7 @@ textarea.form-control-lg {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #bd5d38;
+  background-color: #34558B;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -7595,7 +7595,9 @@ textarea.form-control-lg {
 .ps-5 {
   padding-left: 3rem !important;
 }
-
+.ps-6 {
+  padding-left: 4rem !important;
+}
 .font-monospace {
   font-family: var(--bs-font-monospace) !important;
 }
@@ -7623,7 +7625,9 @@ textarea.form-control-lg {
 .fs-6 {
   font-size: 1rem !important;
 }
-
+.fs-7{
+  font-size: 0.4rem !important;
+}
 .fst-italic {
   font-style: italic !important;
 }
@@ -7738,7 +7742,9 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
 }
-
+.text-lightgreen{
+  color: #12EFC7;
+}
 .text-warning {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
