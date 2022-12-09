@@ -3029,7 +3029,9 @@ textarea.form-control-lg {
   pointer-events: none;
   opacity: 0.65;
 }
-
+.btn-gray{
+  background-color:#C6C6C6;
+}
 .btn-primary {
   color: #000;
   background-color: #1B4173;
@@ -5537,7 +5539,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 1rem;
   outline: 0;
 }
 
@@ -5562,8 +5564,8 @@ textarea.form-control-lg {
   flex-shrink: 0;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  padding: 0.5rem 1rem;
+  border-bottom: 0px solid #dee2e6;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -5580,7 +5582,7 @@ textarea.form-control-lg {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 .modal-footer {
@@ -5590,7 +5592,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 0px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -7545,7 +7547,7 @@ textarea.form-control-lg {
 }
 
 .pe-5 {
-  padding-right: 3rem !important;
+  padding-right: 2rem !important;
 }
 
 .pb-0 {
@@ -7744,6 +7746,21 @@ textarea.form-control-lg {
 }
 .text-lightgreen{
   color: #12EFC7;
+}
+.text-purple{
+  color:#34558B;
+}
+.text-pink{
+  color: #FF6388;
+}
+.text-gray{
+  color:#474646;
+}
+.text-yellow{
+  color:#FDDB1E;
+}
+.text-purple{
+  color: #8B09AC;
 }
 .text-warning {
   --bs-text-opacity: 1;
@@ -8438,7 +8455,12 @@ textarea.form-control-lg {
   .ms-sm-5 {
     margin-left: 3rem !important;
   }
-
+  .ms-sm-6 {
+    margin-left: 18% !important;
+  }
+  .ms-sm-7 {
+    margin-left: 35% !important;
+  }
   .ms-sm-auto {
     margin-left: auto !important;
   }
@@ -11364,6 +11386,7 @@ p.lead {
     width: 17rem;
     height: 100vh;
   }
+
   #sideNav .navbar-brand {
     display: flex;
     margin: auto auto 0;
@@ -11439,5 +11462,15 @@ section.resume-section .resume-section-content {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+}
+@media (max-width: 992px) {
+  .ms-sm-6 {
+    margin-left: 30% !important;
+  }
+}
+@media (max-width: 375px) {
+  .ms-sm-6 {
+    margin-left: 40% !important;
   }
 }
