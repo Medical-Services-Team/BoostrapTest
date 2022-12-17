@@ -217,15 +217,14 @@
                     // for 迴圈
                     for (var i = 0; i < dataLen; i++) {
                         var Row = "";
-                        if(i%3==0){
+                        if(i%4==0){
                           Row = '<div class="d-flex flex-md-row cardList">'
                         }
                         var Img = '<div class="card " style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
                         var name = '<h5 class="card-title m-2" value="example">' + data[i].name + '</h5>'; //組字串
                         var members = '<div class="d-flex flex-md-row m-2"><p class="card-text">' + data[i].member + ' 位成員</p><p class="card-text"> . </p>';
                         var pages = '<p class="card-text">' + data[i].pages + ' 則貼文</p></div>'
-                        var buttons = i%3==2?'<a href="#" class="btn btn-primary rounded-pill m-2 text-white"><img width="10%"  src="../BoostrapTest/assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div></div>':'<a href="#" class="btn btn-primary text-white rounded-pill m-2"><img width="10%"  src="../BoostrapTest/assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div>'
-
+                        var buttons = i%4==2?'<a href="#" class="btn btn-primary rounded-pill m-2 text-white"><img width="10%"  src="../BoostrapTest/assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div></div>':'<a href="#" class="btn btn-primary text-white rounded-pill m-2"><img width="10%"  src="../BoostrapTest/assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div>'
                         str += [ Row + Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
                         
                     }

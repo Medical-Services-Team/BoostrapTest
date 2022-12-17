@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--引入css的方式：https://medium.com/@small2883/css-%E7%9A%84%E4%B8%89%E7%A8%AE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B-58dc7570bb9c-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>myTask</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top border" style="padding: 0px;">
+    <!-- Navbar start-->
+    <nav class="d-flex justify-end navbar container-fluid navbar-expand-lg navbar-light bg-light fixed-top">
+        <div>
+        <a class="navbar-brand" href="#page-top">
+            <img src="../BoostrapTest/assets/img/taskSectionImg/醫療好評網Logo.png" alt="" width="100" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-text">
+               醫生/醫院帳號由此登入
+            </span>
+        </div>
+    </nav>
+    <!-- Navbar end-->
+    <!--navsTab-->
+    <div class=" mt-6 clearfix"></div>
+    <div class="shadow-sm">
+        <ul class="nav sticky-top justify-content-center nav-pills">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">搜尋</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">比較</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">常見問題</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">文章</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">討論區</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">任務/成就</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">個人成就</a></li>
+                <li><a class="dropdown-item" href="#">完成成就</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+          </ul>
+    </div>
+    <!--navsTab-->
+    <!-- Page Content-->
+    <div class="border">
+        <!-- home-->
+        <!-- 用js跑迴圈 -->
+        <!-- js教材:https://hsuchihting.github.io/javascript/20200709/3285756052/ -->
+        <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
+        <h2 class="fs-3 mt-3 text-center mb-4" style="color:#34558B">我的任務</h2>
+        <section class="" id="card">
+            <div class="d-flex flex-md-row resume-section-content" style="justify-content: center;">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
+                      <div class="col">
+                        <div class="p-3 border text-black">連續30天登入好評網
+                            <img width="5%" class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 15點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-lightgreen"> D</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">30/30</div>
+                              </div>
+                              <button type="button" class="btn btn-success rounded-pill m-2 text-white btn-sm fs-7 px-3" data-bs-toggle="modal" data-bs-target="#GetModal">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">為醫師或醫院留下50則評論 
+                            <img width="5%" class="ms-sm-4" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 20點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-purple"> C</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">8/10</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3" data-bs-toggle="modal" data-bs-target="#NotGetModal">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">使用好評網搜尋100次醫生、醫療機構及科別 
+                            <img width="5%" class="" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 20點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-pink"> A</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">48/50</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">以點數開通2個討論區
+                            <img width="5%" class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 10點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-yellow"> E</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">0/2</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">觀看50篇文章   
+                            <img width="5%" class="ms-sm-7" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 15點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-lightgreen"> D</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">38/50</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">在任一討論區發布10篇貼文 
+                            <img width="5%" class="ms-sm-4" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 10點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-yellow"> E</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">2/10</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">在任一討論區按讚80篇貼文
+                            <img width="5%" class="ms-sm-4" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 30點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-purple"> B</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">61/80</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">以點數開通10篇文章
+                            <img width="5%" class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 10點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-yellow"> E</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">6/10</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">為醫師或醫院留下10則評論 
+                            <img width="5%" class="ms-sm-3" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 10點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-lightgreen"> D</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">11/30</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">在任一討論區按讚80篇貼文
+                            <img width="5%" class="ms-sm-4" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 30點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-purple"> B</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">61/80</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">為醫師或醫院留下10則評論 
+                            <img width="5%" class="ms-sm-3" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 10點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-lightgreen"> D</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">11/30</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">為醫師或醫院留下10則評論 
+                            <img width="5%" class="ms-sm-3" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 10點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-lightgreen"> D</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">11/30</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">在任一討論區按讚80篇貼文
+                            <img width="5%" class="ms-sm-4" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 10點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-purple"> B</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">61/80</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">為醫師或醫院留下10則評論 
+                            <img width="5%" class="ms-sm-3" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 10點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-lightgreen"> D</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">11/30</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border text-black">為醫師或醫院留下10則評論 
+                            <img width="5%" class="ms-sm-3" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning"> 10點</span>
+                            <img width="5%" src="../BoostrapTest/assets/img/taskSectionImg/cup.svg"><span class="text-lightgreen"> D</span>
+                            <div class="d-flex align-items-center mt-2">
+                              <div class="progress d-flex" style="width: 75%;">
+                                  <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">11/30</div>
+                              </div>
+                              <button type="button" class="btn btn-gray rounded-pill m-2 text-white btn-sm fs-7 px-3">領取</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col"></div>
+                      <div class="col"></div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 1.Modal -->
+    <div class="modal fade" id="GetModal" tabindex="-1" aria-labelledby="GetModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="GetModalLabel">恭喜您完成任務 !</h5>
+            <p class="text-center text-gray fs-7">好評網需要您這樣的人才</p>
+            <div class="d-flex justify-content-center">
+              <img width="5%" class="ms-sm-3 me-3" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning d-flex align-items-center me-5"> 15點 </span></img>
+              <img width="20%" src="../BoostrapTest/assets/img/taskSectionImg/最佳全勤獎.png">
+            </div>
+            </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-primary rounded-pill text-white fs-7 px-3"> <img width="15%" src="../BoostrapTest/assets/img/taskSectionImg/arrow-right.svg"> 前往查看</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal end-->
+     <!-- 12.Modal -->
+     <div class="modal fade" id="NotGetModal" tabindex="-1" aria-labelledby="NotGetModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="GetModalLabel">很抱歉，您尚未解鎖此任務</h5><br>
+            <img width="30%" src="../BoostrapTest/assets/img/taskSectionImg/sad-man.png" class="mx-auto d-flex align-items-center">
+            <br>
+            <p class="text-center text-gray fs-6">留言評價20次</p> 
+            <p class="text-center text-gray fs-7">多多留下評價讓更多的人了解相關資訊吧~ </p>
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-primary rounded-pill text-white fs-7 px-3"> <img width="15%" src="../BoostrapTest/assets/img/taskSectionImg/arrow-right.svg"> 前往完成</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal end-->
+</body>
+    
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-black text-white">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4">
+     
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-white fw-bold mb-4">
+                關於我們
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">關於我們</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">隱私政策</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">服務條款</a>
+              </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-white fw-bold mb-4">
+              搜尋連結
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">找醫生</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">找醫療結構</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">找科別</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">找疾病或手術</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-white fw-bold mb-4">聯絡資訊</h6>
+            <p>
+                <a href="#!" class="text-reset">意見回饋</a>
+              </p>
+            <p><i class="fas fa-envelope me-3"></i> fjuph316@gmail.com</p>
+            <p>
+              <i class="fas fa-phone me-3"></i>
+              02-2905343
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+  <!-- Footer -->
+    </div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
