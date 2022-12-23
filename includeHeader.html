@@ -2,33 +2,36 @@
     <a class="navbar-brand" href="#top">
         <img src="./圖檔/討論區/醫療好評網logo.png" alt="Bootstrap" width="100%" height="100%">
     </a>
+    <div class="navbar " id="navbarText">
+        <span class="navbar-text">
+            醫生/醫院帳號由此登入
+        </span>
+    </div>
 </header>
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg mt-6 clearfix shadow-sm">
+    <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"
-            style="display: flex;justify-content: space-around;">
-            <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse " id="navbarNavDropdown" style="border:1px red solid">
+            <ul class="navbar-nav" style="display:flex;border:1px red solid; justify-content: space-between;">
                 <li class="nav-item active"><a class="nav-link" href="./home.html">首頁</a></li>
                 <li class="nav-item"><a class="nav-link disabled">搜尋</a></li>
                 <li class="nav-item"><a class="nav-link disabled">比較</a></li>
                 <li class="nav-item"><a class="nav-link disabled">常見問題</a></li>
                 <li class="nav-item"><a class="nav-link disabled">文章</a></li>
                 <li class="nav-item"><a class="nav-link" href="./myWorks.html">討論區</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="./group1.html">group1</a></li>
-                <li class="nav-item"><a class="nav-link" href="./group2.html">group2</a></li> -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-hover="dropdown"
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         任務/成就
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./myTask.html">我的任務</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="#">我的成就</a></li>
                     </ul>
                 </li>
