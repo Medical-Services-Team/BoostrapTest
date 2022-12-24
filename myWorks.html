@@ -11,7 +11,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
   <script src="js/includeBar.js"></script>
 </head>
 
-<body id="page-top border" style="padding: 0px;">
+<body id="page-top border" style="padding: 0px;"  class="p-3 m-0 border-0 bd-example">
   <!--將bar引入-->
   <div w3-include-html="includeHeader.html"></div>
   <div style="display:flex;flex:1">
@@ -42,13 +42,13 @@
             style="border-radius: 10px;margin-left:40px;padding-bottom: 30px;">
             <div class=" p-4 "
               style="background-color:#34558B;border-start-start-radius: 20px;border-start-end-radius: 20px;">
+              <div class="d-flex justify-content-end">
               <img alt="inform" height="25%" src="../BoostrapTest/assets/img/taskSectionImg/information.png"
-                class="d-flex flex-row-reverse" data-bs-toggle="modal" data-bs-target="#GetModal"></button>
+                class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#GetModal">
+              </div>
               <div class="d-flex">
-                <button type="button" style="color:#34558B" class="btn rounded-pill m-2 text-white btn-sm fs-7 px-3"
-                  data-bs-toggle="modal" data-bs-target="#GetModal">
-                  <img alt="winners-cup" src="../BoostrapTest/assets/img/taskSectionImg/winners-cup.png"
-                    data-bs-toggle="modal" data-bs-target="#InstructionsModal"></button>
+                <img alt="winners-cup" src="../BoostrapTest/assets/img/taskSectionImg/winners-cup.png"
+                  data-bs-toggle="modal" data-bs-target="#InstructionsModal">
                 <div class="ms-5">
                   <h4 style="color: #fff;">LV1. 醫療小尖兵</h4>
                   <p style="color: #fff;">總獎章數</p>
