@@ -2,175 +2,288 @@
 <html lang="en">
 
 <head>
-  <!--引入css的方式：https://medium.com/@small2883/css-%E7%9A%84%E4%B8%89%E7%A8%AE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B-58dc7570bb9c-->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>myWorks</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="css/styles.css" rel="stylesheet" />
-  <script src="js/includeBar.js"></script>
+    <!--引入css的方式：https://medium.com/@small2883/css-%E7%9A%84%E4%B8%89%E7%A8%AE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B-58dc7570bb9c-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>myWorks</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body id="page-top border" style="padding: 0px;" class="p-3 m-0 border-0 bd-example">
-  <!--將bar引入-->
-  <div w3-include-html="includeHeader.html"></div>
-  <div style="display:flex;flex:1">
-    <div class="mb-5" style="flex:8">
-      <!--要新增的程式碼寫在這邊-->
-      <!--navsTab-->
-      <!-- Page Content-->
-      <div class="  mb-5 " style="display:flex;flex:1;flex-direction: column">
+<body id="page-top border" style="padding: 0px;">
+    <!-- Navbar start-->
+    <nav class="d-flex justify-end navbar container-fluid navbar-expand-lg navbar-light bg-light fixed-top">
+        <div>
+        <a class="navbar-brand" href="#page-top">
+            <img src="../BoostrapTest/assets/img/taskSectionImg/醫療好評網Logo.png" alt="" width="100" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-text">
+               醫生/醫院帳號由此登入
+            </span>
+        </div>
+    </nav>
+    <!-- Navbar end-->
+    <!--navsTab-->
+    <div class=" mt-6 clearfix"></div>
+    <div class="shadow-sm">
+        <ul class="nav sticky-top justify-content-center nav-pills">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">搜尋</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">比較</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">常見問題</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">文章</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">討論區</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">任務/成就</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">個人成就</a></li>
+                <li><a class="dropdown-item" href="#">完成成就</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+          </ul>
+    </div>
+    <!--navsTab-->
+    <!-- Page Content-->
+    <div class="border">
         <!-- home-->
         <!-- 用js跑迴圈 -->
         <!-- js教材:https://hsuchihting.github.io/javascript/20200709/3285756052/ -->
         <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
-        <h2 class="fs-3 mt-3 text-center mb-4" style="color:#34558B;">我的成就</h2>
-        <div class="d-flex justify-content: center;">
-          <section class=" justify-content: center clearfix shadow" id="card"
-            style="border-radius: 10px;margin-left:40px;padding-bottom: 30px;">
-            <div class=" p-4 "
-              style="background-color:#34558B;border-start-start-radius: 20px;border-start-end-radius: 20px;">
-              <div class="d-flex justify-content-end">
-                <img alt="inform" height="25%" src="./assets/img/taskSectionImg/information.png"
-                  class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#GetModal">
-              </div>
-              <div class="d-flex">
-                <img alt="winners-cup" src="./assets/img/taskSectionImg/winners-cup.png"
-                  data-bs-toggle="modal" data-bs-target="#InstructionsModal">
-                <div class="ms-5">
-                  <h4 style="color: #fff;">LV1. 醫療小尖兵</h4>
-                  <p style="color: #fff;">總獎章數</p>
-                  <img alt="inform" height="25%" src="./assets/img/taskSectionImg/goldmedel_icon.png">
-                  <img alt="inform" height="25%" src="./assets/img/taskSectionImg/silvermedel_icon.png">
-                  <img alt="inform" height="25%" src="./assets/img/taskSectionImg/brozemedel_icon.png">
-                  <img alt="inform" height="25%" src="./assets/img/taskSectionImg/bluemedel_icon.png">
-                </div>
+        <h2 class="fs-3 mt-3 text-center mb-4" style="color:#34558B">我的成就</h2>
+        <div class="d-flex justify-content: center">
+        <section class="justify-content: center ps-5" id="card">
+          <div class="p-4" style="background-color:#34558B;height:50%" >
+            <div class="d-flex justify-content-end">
+            <img alt="inform" width="30%" src="../BoostrapTest/assets/img/taskSectionImg/information.png">
+            </div>
+            <div class="d-flex">
+              <img alt="winners-cup" src="../BoostrapTest/assets/img/taskSectionImg/winners-cup.png" data-bs-toggle="modal" data-bs-target="#InstructionsModal">
+              <div class="ms-5">
+                <h4 style="color: #fff;">LV1. 醫療小尖兵</h4>
+                <p style="color: #fff;">總獎章數</p>
+                <img alt="inform" width="30%" src="../BoostrapTest/assets/img/taskSectionImg/goldmedel_icon.png">
+                <img alt="inform" width="30%" src="../BoostrapTest/assets/img/taskSectionImg/silvermedel_icon.png">
+                <img alt="inform" width="30%" src="../BoostrapTest/assets/img/taskSectionImg/brozemedel_icon.png">
+                <img alt="inform" width="30%" src="../BoostrapTest/assets/img/taskSectionImg/bluemedel_icon.png">
               </div>
             </div>
-            <!-- 1.Modal -->
-            <div class="modal fade" id="GetModal" tabindex="-1" aria-labelledby="GetModalLabel" aria-hidden="true">
-              <div class="modal-dialog  modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <img alt="inform" src="./assets/img/taskSectionImg/獎章等級說明.png">
-                </div>
+          </div>
+          <!--InstructionsModal Start-->
+          <div class="modal fade" id="GetModal" tabindex="-1" aria-labelledby="GetModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <img src="../BoostrapTest/assets/img/taskSectionImg/獎章等級說明.png">
               </div>
             </div>
-            <!--Modal end-->
-            <div>
-              <div class="d-flex flex-md-row resume-section-content container pt-4" style="justify-content: center;">
-                <div class="container pt-4 ms-sm-3">
-                  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 g-lg-4">
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/完成任務以破解獎章.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/熱心評論員.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/敏銳的觀察家.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/完成任務以破解獎章.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/完成任務以破解獎章.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/完成任務以破解獎章.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/完成任務以破解獎章.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/熱血的捧場王.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/完成任務以破解獎章.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/博學多聞的知識家.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/完成任務以破解獎章.png">
-                    </div>
-                    <div class="col">
-                      <img class="ms-sm" src="./assets/img/taskSectionImg/完成任務以破解獎章.png">
+          </div>
+          <!---->
+          <div>
+            <div class="d-flex flex-md-row resume-section-content" style="justify-content: center;">
+                <div class="container pt-4">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 g-lg-4">
+                      <div class="col">
+                          <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/最佳全勤獎.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/熱心評論員.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/敏銳的觀察家.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/完成任務以破解獎章.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/完成任務以破解獎章.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/完成任務以破解獎章.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/完成任務以破解獎章.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/熱血的捧場王.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/完成任務以破解獎章.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/博學多聞的知識家.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/完成任務以破解獎章.png">
+                      </div>
+                      <div class="col">
+                        <img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/完成任務以破解獎章.png">
+                      </div>
+                      
                     </div>
 
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <div style="width:50%">
-            <div class="row row-cols-1 ">
-              <div class="col"><img class="ms-sm-6" src="./assets/img/taskSectionImg/mytask_symtom.png">
-                <div class="col"><img class="ms-sm-6" src="./assets/img/taskSectionImg/mytask_科別.png">
-                </div>
-              </div>
+          </div>
+        </section>
+        <div style="width:50%">
+          <div class="row row-cols-1 ">
+            <div class="col"><img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/mytask_symtom.png">
+            <div class="col"><img class="ms-sm-6" src="../BoostrapTest/assets/img/taskSectionImg/mytask_科別.png">
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- 1.Modal -->
-        <div class="modal fade" id="GetModal" tabindex="-1" aria-labelledby="GetModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <h5 class="modal-title text-center" id="GetModalLabel">恭喜您完成任務 !</h5>
-                <p class="text-center text-gray fs-7">好評網需要您這樣的人才</p>
-                <div class="d-flex justify-content-center">
-                  <img width="5%" class="ms-sm-3 me-3" src="./assets/img/taskSectionImg/coin.svg"><span
-                    class="text-warning d-flex align-items-center me-5"> 15點 </span></img>
-                  <img width="20%" src="./assets/img/taskSectionImg/最佳全勤獎.png">
-                </div>
-              </div>
-              <div class="modal-footer mx-auto">
-                <button type="button" class="btn btn-primary rounded-pill text-white fs-7 px-3"> <img width="15%"
-                    src="./assets/img/taskSectionImg/arrow-right.svg"> 前往查看</button>
-              </div>
+    <!-- 1.Modal -->
+    <div class="modal fade" id="GetModal" tabindex="-1" aria-labelledby="GetModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="GetModalLabel">恭喜您完成任務 !</h5>
+            <p class="text-center text-gray fs-7">好評網需要您這樣的人才</p>
+            <div class="d-flex justify-content-center">
+              <img width="5%" class="ms-sm-3 me-3" src="../BoostrapTest/assets/img/taskSectionImg/coin.svg"><span class="text-warning d-flex align-items-center me-5"> 15點 </span></img>
+              <img width="20%" src="../BoostrapTest/assets/img/taskSectionImg/最佳全勤獎.png">
             </div>
+            </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-primary rounded-pill text-white fs-7 px-3"> <img width="15%" src="../BoostrapTest/assets/img/taskSectionImg/arrow-right.svg"> 前往查看</button>
           </div>
         </div>
-        <!--Modal end-->
-        <!-- 12.Modal -->
-        <div class="modal fade" id="NotGetModal" tabindex="-1" aria-labelledby="NotGetModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <h5 class="modal-title text-center" id="GetModalLabel">很抱歉，您尚未解鎖此任務</h5><br>
-                <img width="30%" src="./assets/img/taskSectionImg/sad-man.png"
-                  class="mx-auto d-flex align-items-center">
-                <br>
-                <p class="text-center text-gray fs-6">留言評價20次</p>
-                <p class="text-center text-gray fs-7">多多留下評價讓更多的人了解相關資訊吧~ </p>
-              </div>
-              <div class="modal-footer mx-auto">
-                <button type="button" class="btn btn-primary rounded-pill text-white fs-7 px-3"> <img width="15%"
-                    src="./assets/img/taskSectionImg/arrow-right.svg"> 前往完成</button>
-              </div>
-            </div>
+      </div>
+    </div>
+    <!--Modal end-->
+     <!-- 12.Modal -->
+     <div class="modal fade" id="NotGetModal" tabindex="-1" aria-labelledby="NotGetModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="GetModalLabel">很抱歉，您尚未解鎖此任務</h5><br>
+            <img width="30%" src="../BoostrapTest/assets/img/taskSectionImg/sad-man.png" class="mx-auto d-flex align-items-center">
+            <br>
+            <p class="text-center text-gray fs-6">留言評價20次</p> 
+            <p class="text-center text-gray fs-7">多多留下評價讓更多的人了解相關資訊吧~ </p>
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-primary rounded-pill text-white fs-7 px-3"> <img width="15%" src="../BoostrapTest/assets/img/taskSectionImg/arrow-right.svg"> 前往完成</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal end-->
+</body>
+    
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-black text-white">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4">
+     
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-white fw-bold mb-4">
+                關於我們
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">關於我們</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">隱私政策</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">服務條款</a>
+              </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-white fw-bold mb-4">
+              搜尋連結
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">找醫生</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">找醫療結構</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">找科別</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">找疾病或手術</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-white fw-bold mb-4">聯絡資訊</h6>
+            <p>
+                <a href="#!" class="text-reset">意見回饋</a>
+              </p>
+            <p><i class="fas fa-envelope me-3"></i> fjuph316@gmail.com</p>
+            <p>
+              <i class="fas fa-phone me-3"></i>
+              02-2905343
+            </p>
           </div>
         </div>
         <!--Modal end-->
