@@ -11462,8 +11462,9 @@ section.resume-section .resume-section-content {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: 100vh!important; 
   }
+  
 }
 @media (min-width: 992px) {
   section.resume-section {
@@ -11473,13 +11474,61 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/*調整RWD處*/
+
 @media (max-width: 992px) {
   .ms-sm-6 {
     margin-left: 30% !important;
   }
+  .myWorkTitle{
+    font-size : 1.2em;
+  }
+  .mytask_symtom_img{
+    width: 80% ;
+  }
+  .mytask_科別_img{
+    width: 80% ;
+  }
 }
+
+@media (max-width: 768px) {
+  .myWorkTitle{
+    font-size : 1em;
+  }
+  
+  
+  /* .myWorkLeftImg{
+    width: 100%;
+  } */
+}
+
 @media (max-width: 375px) {
+  .totalMedelFontSize{
+    font-size : 1em;
+  }
   .ms-sm-6 {
     margin-left: 40% !important;
+  }
+  .winnersCupSize{
+    height: 15%;
+    width: 35%;
+  }
+  .informSize{
+    width: 12%;
+    margin-bottom: 15px;
+  }
+  .myWorkMobileBlueBg{
+    padding-bottom: 0.1rem !important;
+  }
+  .medelMobileSize{
+    height:20% !important;
+  }
+  .d-block {
+    display: block !important;
+  }
+  .myWorkRightImg{
+    margin: 20px 0px 0px 80px!important;
+    margin: auto;
+    width: 80% !important; 
   }
 }
