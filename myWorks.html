@@ -37,25 +37,26 @@
         <!-- js教材:https://hsuchihting.github.io/javascript/20200709/3285756052/ -->
         <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
         <h2 class="fs-3 mt-3 text-center mb-4" style="color:#34558B;">我的成就</h2>
-        <div class="d-flex justify-content: center;">
+        <div class="d-block d-flex justify-content: center;">
           <section class=" justify-content: center clearfix shadow" id="card"
             style="border-radius: 10px;margin-left:40px;padding-bottom: 30px;">
-            <div class=" p-4 "
+            <div class=" p-4 myWorkMobileBlueBg"
               style="background-color:#34558B;border-start-start-radius: 20px;border-start-end-radius: 20px;">
               <div class="d-flex justify-content-end">
-                <img alt="inform" height="25%" src="./assets/img/taskSectionImg/information.png"
-                  class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#GetModal">
+                <img alt="inform" height="25%" class="informSize" src="./assets/img/taskSectionImg/information.png"
+                  class="d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#GetModal"
+                  data-toggle="tooltip" data-placement="left" title="獎章制度詳細說明">
               </div>
               <div class="d-flex">
-                <img alt="winners-cup" src="./assets/img/taskSectionImg/winners-cup.png"
+                <img alt="winners-cup" class="winnersCupSize" src="./assets/img/taskSectionImg/winners-cup.png"
                   data-bs-toggle="modal" data-bs-target="#InstructionsModal">
                 <div class="ms-5">
-                  <h4 style="color: #fff;">LV1. 醫療小尖兵</h4>
-                  <p style="color: #fff;">總獎章數</p>
-                  <img alt="inform" height="25%" src="./assets/img/taskSectionImg/goldmedel_icon.png">
-                  <img alt="inform" height="25%" src="./assets/img/taskSectionImg/silvermedel_icon.png">
-                  <img alt="inform" height="25%" src="./assets/img/taskSectionImg/brozemedel_icon.png">
-                  <img alt="inform" height="25%" src="./assets/img/taskSectionImg/bluemedel_icon.png">
+                  <h4 style="color: #fff;" class="myWorkTitle">LV1. 醫療小尖兵</h4>
+                  <p style="color: #fff;" class="totalMedelFontSize">總獎章數</p>
+                  <img alt="inform" height="25%" class="medelMobileSize" src="./assets/img/taskSectionImg/goldmedel_icon.png">
+                  <img alt="inform" height="25%" class="medelMobileSize" src="./assets/img/taskSectionImg/silvermedel_icon.png">
+                  <img alt="inform" height="25%" class="medelMobileSize" src="./assets/img/taskSectionImg/brozemedel_icon.png">
+                  <img alt="inform" height="25%" class="medelMobileSize" src="./assets/img/taskSectionImg/bluemedel_icon.png">
                 </div>
               </div>
             </div>
@@ -74,7 +75,7 @@
             <div>
               <div class="d-flex flex-md-row resume-section-content container pt-4" style="justify-content: center;">
                 <div class="container pt-4 ms-sm-3">
-                  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 g-lg-4">
+                  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 g-lg-4 myWorskTaskImg">
                     <div class="col">
                       <img class="ms-sm" width="90%" src="./assets/img/taskSectionImg/完成任務以破解獎章.png">
                     </div>
@@ -117,10 +118,10 @@
               </div>
             </div>
           </section>
-          <div style="width:50%">
+          <div style="width:50%" class="myWorkRightImg">
             <div class="row row-cols-1 ">
-              <div class="col"><img class="ms-sm-2" src="./assets/img/taskSectionImg/mytask_symtom.png">
-                <div class="col"><img class="ms-sm-2" src="./assets/img/taskSectionImg/mytask_科別.png">
+              <div class="col"><img class="ms-sm-4 mytask_symtom_img" src="./assets/img/taskSectionImg/mytask_symtom.png">
+                <div class="col"><img class="ms-sm-4 mytask_科別_img" src="./assets/img/taskSectionImg/mytask_科別.png">
                 </div>
               </div>
             </div>
