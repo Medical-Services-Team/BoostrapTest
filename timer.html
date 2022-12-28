@@ -1,0 +1,33 @@
+<html>
+    <style>
+        body{
+            overflow-y:hidden;
+            overflow-x:hidden;
+            padding: 0px;
+        }
+    </style>
+    <body>
+        <div id = "Check_i" style="font-size: 10px;color:gray"></div>
+    </body>
+    <script type="text/javascript">
+        var SetMinute = 0;
+        function Check_Time() {
+            SetMinute += 1;
+            var Check_i = document.getElementById("Check_i");
+    
+            var Cal_Hour = Math.floor(SetMinute / 3600);
+            var Cal_Minute = Math.floor(Math.floor(SetMinute % 3600) / 60);
+            var Cal_Second = SetMinute % 60;
+            if(Cal_Minute == 0){
+                Check_i.innerHTML = Cal_Second + "秒鐘前"
+            }
+            else if(Cal_Minute != 0 && Cal_Hour == 0){
+                Check_i.innerHTML = Cal_Minute + "分鐘前"
+            }
+            else{
+                Check_i.innerHTML = CalHour + "小時前"
+            }
+        }
+        var mm = window.setInterval("Check_Time()", 1000);
+    </script>
+</html>
