@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>taskSection</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -20,7 +21,9 @@
         type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--引入include的js-->
     <script src="js/includeBar.js"></script>
 </head>
@@ -33,159 +36,159 @@
         <div class="mb-5" style="flex:8;margin: 30px;">
             <!--要新增的程式碼寫在這邊-->
             <div class="">
-              <!-- home-->
-              <!-- 用js跑迴圈 -->
-              <!-- js教材:https://hsuchihting.github.io/javascript/20200709/3285756052/ -->
-              <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
-              <h2 class="fs-3 mt-3 text-center" style="color:#34558B">探索討論區</h2>
-              <section class="" id="card">
-                  <div class="d-flex flex-md-row resume-section-content" style="justify-content: center;">
-                      <div class="d-flex flex-md-column cardList">
-                      </div>
-                      <!-- <div class="resume-section-content">
+                <!-- home-->
+                <!-- 用js跑迴圈 -->
+                <!-- js教材:https://hsuchihting.github.io/javascript/20200709/3285756052/ -->
+                <!-- js範例:https://codepen.io/hnzxewqw/pen/ExjNRoL?editors=0010 -->
+                <h2 class="fs-3 mt-3 text-center" style="color:#34558B">探索討論區</h2>
+                <section class="" id="card">
+                    <div class="d-flex flex-md-row resume-section-content" style="justify-content: center;">
+                        <div class="d-flex flex-md-column cardList">
+                        </div>
+                        <!-- <div class="resume-section-content">
                         <h2 class="mb-5">誼萱用js跑迴圈的card</h2>
                         <div class="cardList d-flex flex-md-row">
                         </div> -->
-                      <script>
-                          //JSON 資料
-                          var data = [
-                              {
-                                  cardImg: './assets/img/taskSectionImg/氣喘.png',
-                                  name: '氣喘',
-                                  member: '266',
-                                  pages: '48',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/急性心肌梗塞.png',
-                                  name: '急性心肌梗塞',
-                                  member: '266',
-                                  pages: '68',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/人工膝關節手術.png',
-                                  name: '人工膝關節手術',
-                                  member: '266',
-                                  pages: '38',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/腦中風.png',
-                                  name: '腦中風',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/子宮肌瘤手術.png',
-                                  name: '子宮肌瘤手術',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/消化性潰瘍.png',
-                                  name: '消化性潰瘍',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: '../assets/img/taskSectionImg/血液透析.png',
-                                  name: '血液透析',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/腹膜透析.png',
-                                  name: '腹膜透析',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/慢性腎臟病.png',
-                                  name: '慢性腎臟病',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/骨質酥鬆.png',
-                                  name: '骨質酥鬆',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/創傷.png',
-                                  name: '創傷',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/腫瘤.png',
-                                  name: '腫瘤',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/斜視.png',
-                                  name: '斜視',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/打鼾.png',
-                                  name: '打鼾',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              },
-                              {
-                                  cardImg: './assets/img/taskSectionImg/AA.png',
-                                  name: 'AA',
-                                  member: '11',
-                                  pages: '12313',
-                                  points: '150'
-                              }
-                          ]
-                          //變數
-                          var el = document.querySelector('.cardList');
-                          var dataLen = data.length; //資料長度
-                          var str = "" //建立一個空字串，要將資料填入的
-                          var count = 0
-                          // for 迴圈
-                          for (var i = 0; i < dataLen; i++) {
-                              var Row = "";
-                              if(i%3==0){
-                                Row = '<div class="d-flex flex-md-row cardList">'
-                              }
-                              var Img = '<div class="card " style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
-                              var name = '<h5 class="card-title m-2" value="example">' + data[i].name + '</h5>'; //組字串
-                              var members = '<div class="d-flex flex-md-row m-2"><p class="card-text">' + data[i].member + ' 位成員</p><p class="card-text"> . </p>';
-                              var pages = '<p class="card-text">' + data[i].pages + ' 則貼文</p></div>'
-                              var buttons = i%3==2?'<a href="#" class="btn btn-primary rounded-pill m-2 text-white"><img width="10%"  src="./assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div></div>':'<a href="#" class="btn btn-primary text-white rounded-pill m-2"><img width="10%"  src="./assets/img/taskSectionImg/coin.png"> '+ data[i].points +'</a></div>'
-      
-                              str += [ Row + Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
-                              
-                          }
-                          el.innerHTML = str;
+                        <script>
+                            //JSON 資料
+                            var data = [
+                                {
+                                    cardImg: './assets/img/taskSectionImg/氣喘.png',
+                                    name: '氣喘',
+                                    member: '266',
+                                    pages: '48',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/急性心肌梗塞.png',
+                                    name: '急性心肌梗塞',
+                                    member: '266',
+                                    pages: '68',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/人工膝關節手術.png',
+                                    name: '人工膝關節手術',
+                                    member: '266',
+                                    pages: '38',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/腦中風.png',
+                                    name: '腦中風',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/子宮肌瘤手術.png',
+                                    name: '子宮肌瘤手術',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/消化性潰瘍.png',
+                                    name: '消化性潰瘍',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: '../assets/img/taskSectionImg/血液透析.png',
+                                    name: '血液透析',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/腹膜透析.png',
+                                    name: '腹膜透析',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/慢性腎臟病.png',
+                                    name: '慢性腎臟病',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/骨質酥鬆.png',
+                                    name: '骨質酥鬆',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/創傷.png',
+                                    name: '創傷',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/腫瘤.png',
+                                    name: '腫瘤',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/斜視.png',
+                                    name: '斜視',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/打鼾.png',
+                                    name: '打鼾',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                },
+                                {
+                                    cardImg: './assets/img/taskSectionImg/AA.png',
+                                    name: 'AA',
+                                    member: '11',
+                                    pages: '12313',
+                                    points: '150'
+                                }
+                            ]
+                            //變數
+                            var el = document.querySelector('.cardList');
+                            var dataLen = data.length; //資料長度
+                            var str = "" //建立一個空字串，要將資料填入的
+                            var count = 0
+                            // for 迴圈
+                            for (var i = 0; i < dataLen; i++) {
+                                var Row = "";
+                                if (i % 3 == 0) {
+                                    Row = '<div class="d-flex flex-md-row cardList">'
+                                }
+                                var Img = '<div class="card " style="width: 15rem;margin: 10px;"><img src=' + data[i].cardImg + ' class="card-img-top" alt="...">'; //組字串
+                                var name = '<h5 class="card-title m-2" value="example">' + data[i].name + '</h5>'; //組字串
+                                var members = '<div class="d-flex flex-md-row m-2"><p class="card-text">' + data[i].member + ' 位成員</p><p class="card-text"> . </p>';
+                                var pages = '<p class="card-text">' + data[i].pages + ' 則貼文</p></div>'
+                                var buttons = i % 3 == 2 ? '<a href="#" class="btn btn-primary rounded-pill m-2 text-white"><img width="10%"  src="./assets/img/taskSectionImg/coin.png"> ' + data[i].points + '</a></div></div>' : '<a href="#" class="btn btn-primary text-white rounded-pill m-2"><img width="10%"  src="./assets/img/taskSectionImg/coin.png"> ' + data[i].points + '</a></div>'
+
+                                str += [Row + Img + name + members + pages + buttons]; // 透過加總把 變數 content 的內容回傳到 str 中
+
+                            }
+                            el.innerHTML = str;
                   //透過 el 選取到的 list，透過 innerHTML 的方式，把 str 裡的資料渲染到網頁上
-                      </script>
-                      </div>
-                  </div>
-              </section>
-          </div>
-      
-      
-            <!--程式碼到此結束-->
+                        </script>
+                    </div>
+            </div>
+            </section>
         </div>
+
+
+        <!--程式碼到此結束-->
+    </div>
     </div>
     <div w3-include-html="includeFooter.html"></div>
     <!--這邊要呼叫js函式-->
