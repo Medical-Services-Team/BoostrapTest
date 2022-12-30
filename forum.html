@@ -71,7 +71,7 @@
                                                     str += '<iframe style="margin-top: -10px;margin-bottom:10px" height="25px" src ="timer.html"></iframe>';
                                                     str += '<div style="display: flex;flex-direction:row;"> <div style = "background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px;" > # 胃痛 </div > <div style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px">  # 腸胃炎  </div> </div > '
                                                     str += '<p>' + content.value + '</p>'
-                                                    str += '<div style="display: flex;flex-direction:row;"> <div style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;"> <i class="fa-regular fa-thumbs-up" style="color: #474646;"></i> <p style="color: #474646;font-size: 15px;margin-left: 10px;">110</p> </div> <div style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;"> <i class="fa-regular fa-message" style="color: #474646;"></i> <p style=" color: #474646;font-size: 15px;margin-left: 10px;">6</p> </div> </div>'
+                                                    str += '<div style="display: flex;flex-direction:row;"> <div style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;"> <i class="fa-regular fa-thumbs-up" style="color: #474646;"></i> <p style="color: #474646;font-size: 15px;margin-left: 10px;">0</p> </div> <div style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;"> <i class="fa-regular fa-message" style="color: #474646;"></i> <p style=" color: #474646;font-size: 15px;margin-left: 10px;">0</p> </div> </div>'
                                                     str += '</div></div>'
 
                                                     var el = document.querySelector('.commentContent');
@@ -147,14 +147,35 @@
                                     <div style="display: flex;flex-direction:row;">
                                         <div
                                             style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;">
-                                            <i class="fa-regular fa-thumbs-up" style="color: #474646;"></i>
-                                            <p style="color: #474646;font-size: 15px;margin-left: 10px;">110</p>
+                                            <button class='like-btn' style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
+                                                <i class="fa-regular fa-thumbs-up" id="like-icon" style="color: #474646;"></i>
+                                                <p style="color: #474646;font-size: 15px;margin-left: 10px;" class="like-text">110</p>
+                                            </button>
+                                            <script>
+                                                const button = document.querySelector('.like-btn');
+                                                const buttonText = button.querySelector('.like-text');
+                                                let isLiked = false
+                                                button.addEventListener('click', () => {
+                                                    isLiked = !isLiked
+                                                    if (isLiked) {
+                                                        buttonText.innerHTML = '111';
+                                                        button.querySelector('#like-icon').className = 'fa-solid fa-thumbs-up';
+                                                        //likeicon.style.cssText = 'color: #34558D';
+                                                    } 
+                                                    else {
+                                                        buttonText.innerHTML = '110';
+                                                        document.querySelector('#like-icon').className = 'fa-regular fa-thumbs-up';
+                                                        //likeicon.style.cssText = 'color: #474646';
+                                                    }
+                                                }, false)
+                                            </script>
                                         </div>
                                         <div
                                             style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;">
-
-                                            <i class="fa-regular fa-message" style="color: #474646;"></i>
-                                            <p style=" color: #474646;font-size: 15px;margin-left: 10px;">6</p>
+                                            <button style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
+                                                <i class="fa-regular fa-message" style="color: #474646;"></i>
+                                                <p style=" color: #474646;font-size: 15px;margin-left: 10px;">6</p>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
