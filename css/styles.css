@@ -11509,7 +11509,7 @@ section.resume-section .resume-section-content {
 
 @media (max-width: 375px) {
   .totalMedelFontSize{
-    font-size : 1em;
+    font-size : 0.5em;
   }
   .ms-sm-6 {
     margin-left: 40% !important;
@@ -11523,10 +11523,10 @@ section.resume-section .resume-section-content {
     margin-bottom: 15px;
   }
   .myWorkMobileBlueBg{
-    padding-bottom: 0.1rem !important;
+    padding-bottom: 0.05rem !important;
   }
   .medelMobileSize{
-    height:20% !important;
+    height:10% !important;
   }
   .d-block {
     display: block !important;
