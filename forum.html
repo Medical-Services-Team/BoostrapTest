@@ -17,7 +17,7 @@
     <div w3-include-html="includeHeader.html"></div>
     <div style="display:flex;flex:1">
         <div w3-include-html="includeLeftBar.html" style="flex:1;"></div>
-        <div class="mb-5" style="flex:8;margin: 30px;">
+        <div class="mb-5" style="flex:7;margin: 30px;">
             <!--要新增的程式碼寫在這邊-->
             <div class="mb-5" style="display:flex;flex:1;margin: 30px;flex-direction: column;">
                 <div class="card" style="height: 300px;width: 100%;border-radius: 10px;">
@@ -170,11 +170,13 @@
                                                     if (isLiked) {
                                                         buttonText.innerHTML = '111';
                                                         button.querySelector('#like-icon').className = 'fa-solid fa-thumbs-up';
+                                                        button.querySelector('#like-icon').style.cssText = 'color: #34558D';
                                                         //likeicon.style.cssText = 'color: #34558D';
                                                     }
                                                     else {
                                                         buttonText.innerHTML = '110';
-                                                        document.querySelector('#like-icon').className = 'fa-regular fa-thumbs-up';
+                                                        document.querySelector('#like-icon').className = 'fa-solid fa-thumbs-up';
+                                                        button.querySelector('#like-icon').style.cssText = 'color: #474646';
                                                         //likeicon.style.cssText = 'color: #474646';
                                                     }
                                                 }, false)
