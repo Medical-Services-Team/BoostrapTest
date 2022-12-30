@@ -47,84 +47,91 @@
                             <img src="./圖檔/討論區/個人頭像.png" class="rounded-circle"
                                 style="max-height: 50px;max-width: 50px;margin-right:20px;cursor: pointer;"
                                 alt="Avatar" />
-                            <input type="button" class="form-control" 
-                                style="display:flex;flex:10;margin-right: 10px;background-color: #E9E9E9;border-radius: 20px;" data-bs-toggle="modal" data-bs-target="#commentModal">
+                            <input type="button" class="form-control"
+                                style="display:flex;flex:10;margin-right: 10px;background-color: #E9E9E9;border-radius: 20px;"
+                                data-bs-toggle="modal" data-bs-target="#commentModal">
                             <div class="modal fade" tabindex="-1" id="commentModal" data-bs-backdrop="static">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">建立貼文</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <script type="text/javascript">
-                                            function AddComment() {
-                                                var content = document.querySelector('#formGroupExampleInput');
-                                                var Today = new Date();
-                                                const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-                                                var str = '';
-                                                if(content.value != ""){
-                                                    str += '<div class=" card" style="display:flex;flex:1;height: auto;border-radius: 10px;margin-top:30px;margin-right:30px;flex-direction: row;padding: 20px;">'
-                                                    str += '<img src="./圖檔/討論區/個人頭像.png" class="rounded-circle"' + 'style="max-height: 50px;max-width: 50px;margin-right:20px;cursor: pointer;" alt="Avatar" />'
-                                                    str += '<div style="flex:12;display:flex;flex-direction: column;">'
-                                                    str += '<h6>李小米</h6>';
-                                                    str += '<iframe style="margin-top: -10px;margin-bottom:10px" height="25px" src ="timer.html"></iframe>';
-                                                    str += '<div style="display: flex;flex-direction:row;"> <div style = "background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px;" > # 胃痛 </div > <div style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px">  # 腸胃炎  </div> </div > '
-                                                    str += '<p>' + content.value + '</p>'
-                                                    str += '<div style="display: flex;flex-direction:row;"> <div style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;"> <i class="fa-regular fa-thumbs-up" style="color: #474646;"></i> <p style="color: #474646;font-size: 15px;margin-left: 10px;">0</p> </div> <div style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;"> <i class="fa-regular fa-message" style="color: #474646;"></i> <p style=" color: #474646;font-size: 15px;margin-left: 10px;">0</p> </div> </div>'
-                                                    str += '</div></div>'
-
-                                                    var el = document.querySelector('.commentContent');
-                                                    var parser = new DOMParser();
-                                                    var doc = parser.parseFromString(str, "text/html").body.firstElementChild;
-                                                    el.prepend(doc);
-                                                    content.value = '';
-                                                }
-                                            }
-                                        </script>
-                                            
-
-                                        <div style="display:flex;flex-direction: row;">
-                                            <img src="./圖檔/討論區/個人頭像.png" class="rounded-circle"
-                                            style="max-height: 50px;max-width: 50px;margin-right:10px;cursor: pointer;"
-                                            alt="Avatar" />
-                                            <div style="display: flex; align-items: center"><h5>李小米</h5></div>
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">建立貼文</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
-                                        <textarea class="form-control" style="min-height: 100px;max-height: 300px;" id="formGroupExampleInput"></textarea>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                                        <button type="button" class="btn btn-primary" onclick="AddComment()" data-bs-dismiss="modal">
-                                            發布
-                                            <i class="fa-solid fa-location-arrow" style="margin-top: 5px;"></i>
-                                        </button>
-                                    </div>
+                                        <div class="modal-body">
+                                            <script type="text/javascript">
+                                                function AddComment() {
+                                                    var content = document.querySelector('#formGroupExampleInput');
+                                                    var Today = new Date();
+                                                    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+                                                    var str = '';
+                                                    if (content.value != "") {
+                                                        str += '<div class=" card" style="display:flex;flex:1;height: auto;border-radius: 10px;margin-top:30px;margin-right:30px;flex-direction: row;padding: 20px;">'
+                                                        str += '<img src="./圖檔/討論區/個人頭像.png" class="rounded-circle"' + 'style="max-height: 50px;max-width: 50px;margin-right:20px;cursor: pointer;" alt="Avatar" />'
+                                                        str += '<div style="flex:12;display:flex;flex-direction: column;">'
+                                                        str += '<h6>李小米 <img src="./圖檔/討論區/Lv1.png" /></h6>';
+                                                        str += '<iframe style="margin-top: -10px;margin-bottom:10px" height="25px" src ="timer.html"></iframe>';
+                                                        str += '<div style="display: flex;flex-direction:row;"> <div style = "background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px;" > # 胃痛 </div > <div style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 5px;margin-right: 10px">  # 腸胃炎  </div> </div > '
+                                                        str += '<p>' + content.value + '</p>'
+                                                        str += '<div style="display: flex;flex-direction:row;"> <div style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;"> <i class="fa-regular fa-thumbs-up" style="color: #474646;"></i> <p style="color: #474646;font-size: 15px;margin-left: 10px;">0</p> </div> <div style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;"> <i class="fa-regular fa-message" style="color: #474646;"></i> <p style=" color: #474646;font-size: 15px;margin-left: 10px;">0</p> </div> </div>'
+                                                        str += '</div></div>'
+
+                                                        var el = document.querySelector('.commentContent');
+                                                        var parser = new DOMParser();
+                                                        var doc = parser.parseFromString(str, "text/html").body.firstElementChild;
+                                                        el.prepend(doc);
+                                                        content.value = '';
+                                                    }
+                                                }
+                                            </script>
+
+
+                                            <div style="display:flex;flex-direction: row;">
+                                                <img src="./圖檔/討論區/個人頭像.png" class="rounded-circle"
+                                                    style="max-height: 50px;max-width: 50px;margin-right:10px;cursor: pointer;"
+                                                    alt="Avatar" />
+                                                <div style="display: flex; align-items: center">
+                                                    <h5>李小米 <img src="./圖檔/討論區/Lv1.png" /></h5>
+                                                </div>
+                                            </div>
+                                            <textarea class="form-control" style="min-height: 100px;max-height: 300px;"
+                                                id="formGroupExampleInput"></textarea>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">關閉</button>
+                                            <button type="button" class="btn btn-primary" onclick="AddComment()"
+                                                data-bs-dismiss="modal">
+                                                發布
+                                                <i class="fa-solid fa-location-arrow" style="margin-top: 5px;"></i>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <button type="button" class="btn btn-primary justify-content-center"
-                                style="display:flex;flex:1;border-radius: 30px;background-color:#8C8B8B ;"
-                                data-bs-toggle="modal" data-bs-target="#commentModal">發布<i class="fa-solid fa-location-arrow" 
-                                    style="margin-top: 5px;"></i></button>
+                                style="display:flex;flex:1;border-radius: 30px;background-color:#1B4173 ;border-color:#1B4173"
+                                data-bs-toggle="modal" data-bs-target="#commentModal">發布<i
+                                    class="fa-solid fa-location-arrow" style="margin-top: 5px;"></i></button>
                         </div>
                         <div class="commentContent">
                             <div class=" card"
                                 style="display:flex;flex:1;height: auto;border-radius: 10px;margin-top:30px;margin-right:20px;flex-direction: row;padding: 15px;">
-                                <img src="./圖檔/討論區/個人頭像.png" class="rounded-circle"
+                                <img src="./圖檔/討論區/Ellipse 13 (1).png" class="rounded-circle"
                                     style="max-height: 50px;max-width: 50px;margin-right:20px;cursor: pointer;"
                                     alt="Avatar" />
                                 <div style="flex:12;display:flex;flex-direction: column;">
-                                    <h6>李小米</h6>
-                                    <p style="font-size: 10px;color:gray;margin:5px;">5天前</p>
+                                    <h6>陳小心 <img src="./圖檔/討論區/Lv1.png" /></h6>
+                                    <p style="font-size: 10px;color:gray;margin:5px;">3天前</p>
                                     <div style="display: flex;flex-direction:row;">
                                         <div
-                                            style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px;">
-                                            # 胃痛
+                                            style="background-color: #7B16CA;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px;">
+                                            # 腦炎
                                         </div>
                                         <div
-                                            style="background-color: #1B4173;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px">
-                                            # 腸胃炎
+                                            style="background-color: #7B16CA;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px">
+                                            # 手術
                                         </div>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet consectetur. Ut ultricies ante sem rutrum et nunc cras
@@ -147,9 +154,12 @@
                                     <div style="display: flex;flex-direction:row;">
                                         <div
                                             style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;">
-                                            <button class='like-btn' style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
-                                                <i class="fa-regular fa-thumbs-up" id="like-icon" style="color: #474646;"></i>
-                                                <p style="color: #474646;font-size: 15px;margin-left: 10px;" class="like-text">110</p>
+                                            <button class='like-btn'
+                                                style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
+                                                <i class="fa-regular fa-thumbs-up" id="like-icon"
+                                                    style="color: #474646;"></i>
+                                                <p style="color: #474646;font-size: 15px;margin-left: 10px;"
+                                                    class="like-text">110</p>
                                             </button>
                                             <script>
                                                 const button = document.querySelector('.like-btn');
@@ -161,7 +171,7 @@
                                                         buttonText.innerHTML = '111';
                                                         button.querySelector('#like-icon').className = 'fa-solid fa-thumbs-up';
                                                         //likeicon.style.cssText = 'color: #34558D';
-                                                    } 
+                                                    }
                                                     else {
                                                         buttonText.innerHTML = '110';
                                                         document.querySelector('#like-icon').className = 'fa-regular fa-thumbs-up';
@@ -172,7 +182,122 @@
                                         </div>
                                         <div
                                             style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;">
-                                            <button style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
+                                            <button
+                                                style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
+                                                <i class="fa-regular fa-message" style="color: #474646;"></i>
+                                                <p style=" color: #474646;font-size: 15px;margin-left: 10px;">6</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" card"
+                                style="display:flex;flex:1;height: auto;border-radius: 10px;margin-top:30px;margin-right:20px;flex-direction: row;padding: 15px;">
+                                <img src="./圖檔/討論區/Ellipse 13 (4).png" class="rounded-circle"
+                                    style="max-height: 50px;max-width: 50px;margin-right:20px;cursor: pointer;"
+                                    alt="Avatar" />
+                                <div style="flex:12;display:flex;flex-direction: column;">
+                                    <h6>廖小盧 <img src="./圖檔/討論區/Lv2.png" /></h6>
+                                    <p style="font-size: 10px;color:gray;margin:5px;">15天前</p>
+                                    <div style="display: flex;flex-direction:row;">
+                                        <div
+                                            style="background-color: #2FD79A;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px;">
+                                            # 肌腱炎
+                                        </div>
+                                        <div
+                                            style="background-color: #2FD79A;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px">
+                                            # 復健
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Ut ultricies ante sem rutrum et nunc cras
+                                        mauris
+                                        nisi. Curabitur enim cras tincidunt quisque fermentum. Malesuada nisl cursus
+                                        fermentum
+                                        consectetur fames at urna. Habitasse nibh hac neque urna risus eu elit molestie
+                                        odio.
+                                        Massa varius eu commodo rutrum platea nulla. Neque non tellus dolor malesuada
+                                        diam
+                                        gravida phasellus amet ac. Sed hendrerit lacus morbi aenean enim egestas. Urna
+                                        sem
+                                        integer velit vitae. Arcu non quam in enim tortor congue urna egestas.
+                                        Consectetur
+                                        netus
+                                        porttitor donec senectus et felis mauris. Odio ac sapien velit vestibulum. Ut
+                                        leo
+                                        nullam
+                                        blandit vitae. </p>
+                                    <div style="display: flex;flex-direction:row;">
+                                        <div
+                                            style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;">
+                                            <button class='like-btn'
+                                                style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
+                                                <i class="fa-regular fa-thumbs-up" id="like-icon"
+                                                    style="color: #474646;"></i>
+                                                <p style="color: #474646;font-size: 15px;margin-left: 10px;"
+                                                    class="like-text">110</p>
+                                            </button>
+                                        </div>
+                                        <div
+                                            style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;">
+                                            <button
+                                                style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
+                                                <i class="fa-regular fa-message" style="color: #474646;"></i>
+                                                <p style=" color: #474646;font-size: 15px;margin-left: 10px;">6</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" card"
+                                style="display:flex;flex:1;height: auto;border-radius: 10px;margin-top:30px;margin-right:20px;flex-direction: row;padding: 15px;">
+                                <img src="./圖檔/討論區/陳小太.png " class="rounded-circle"
+                                    style="max-height: 50px;max-width: 50px;margin-right:20px;cursor: pointer;"
+                                    alt="Avatar" />
+                                <div style="flex:12;display:flex;flex-direction: column;">
+                                    <h6>林小間 <img src="./圖檔/討論區/Lv3.png" /></h6>
+                                    <p style="font-size: 10px;color:gray;margin:5px;">5天前</p>
+                                    <div style="display: flex;flex-direction:row;">
+                                        <div
+                                            style="background-color: #1170ED;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px;">
+                                            # 糖尿病
+                                        </div>
+                                        <div
+                                            style="background-color: #1170ED;border-radius:50px;color:white;font-size: 8px;padding: 3px;margin-right: 10px">
+                                            # 慢性病
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Ut ultricies ante sem rutrum et nunc cras
+                                        mauris
+                                        nisi. Curabitur enim cras tincidunt quisque fermentum. Malesuada nisl cursus
+                                        fermentum
+                                        consectetur fames at urna. Habitasse nibh hac neque urna risus eu elit molestie
+                                        odio.
+                                        Massa varius eu commodo rutrum platea nulla. Neque non tellus dolor malesuada
+                                        diam
+                                        gravida phasellus amet ac. Sed hendrerit lacus morbi aenean enim egestas. Urna
+                                        sem
+                                        integer velit vitae. Arcu non quam in enim tortor congue urna egestas.
+                                        Consectetur
+                                        netus
+                                        porttitor donec senectus et felis mauris. Odio ac sapien velit vestibulum. Ut
+                                        leo
+                                        nullam
+                                        blandit vitae. </p>
+                                    <div style="display: flex;flex-direction:row;">
+                                        <div
+                                            style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;">
+                                            <button class='like-btn'
+                                                style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
+                                                <i class="fa-regular fa-thumbs-up" id="like-icon"
+                                                    style="color: #474646;"></i>
+                                                <p style="color: #474646;font-size: 15px;margin-left: 10px;"
+                                                    class="like-text">110</p>
+                                            </button>
+                                        </div>
+                                        <div
+                                            style="display:flex;flex-direction: row;color:＃1B4173;font-size: 20px;padding: 5px;margin-right: 10px;cursor: pointer;">
+                                            <button
+                                                style="background: transparent;border-width: 0px;outline: none;display: flex;flex-direction: row;align-items: flex-start;">
                                                 <i class="fa-regular fa-message" style="color: #474646;"></i>
                                                 <p style=" color: #474646;font-size: 15px;margin-left: 10px;">6</p>
                                             </button>
