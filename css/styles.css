@@ -3272,6 +3272,12 @@ fieldset:disabled .btn {
   color: #000;
 }
 
+.btn-text {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+}
+
 .btn-primary {
   color: #000;
   background-color: #000;
@@ -12507,7 +12513,15 @@ section.resume-section .resume-section-content {
   } */
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
+  .card {
+    display: none;
+  }
+
+  .phone_bar {
+    display: none;
+  }
+
   .totalMedelFontSize {
     font-size: 0.5em;
   }

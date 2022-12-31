@@ -11,12 +11,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--引入include的js-->
     <script src="js/includeBar.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
     <div w3-include-html="includeHeader.html"></div>
     <div style="display:flex;flex:1">
-        <div w3-include-html="includeLeftBar.html" style="flex:1;"></div>
+        <div w3-include-html="includeLeftBar.html" style="flex:1;" class="phone_bar"></div>
         <div class="mb-5" style="flex:7;margin: 30px;">
             <!--要新增的程式碼寫在這邊-->
             <div class="mb-5" style="display:flex;flex:1;margin: 30px;flex-direction: column;">
@@ -100,10 +101,11 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">關閉</button>
-                                            <button type="button" class="btn btn-primary" onclick="AddComment()"
-                                                data-bs-dismiss="modal">
-                                                發布
-                                                <i class="fa-solid fa-location-arrow" style="margin-top: 5px;"></i>
+                                            <button type="button" class="d-flex btn btn-primary" onclick="AddComment()"
+                                                data-bs-dismiss="modal" style="background-color: #1B4173;">
+                                                <p style="color:#fff;margin:0px">發布</p>
+                                                <i class="fa-solid fa-location-arrow"
+                                                    style="margin-top: 5px;color:fff"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -111,7 +113,7 @@
                             </div>
 
                             <button type="button" class="btn btn-primary justify-content-center"
-                                style="display:flex;flex:1;border-radius: 30px;background-color:#1B4173 ;border-color:#1B4173"
+                                style="display:flex;flex:1;border-radius: 30px;background-color:#1B4173 ;border-color:#1B4173;color:#fff"
                                 data-bs-toggle="modal" data-bs-target="#commentModal">發布<i
                                     class="fa-solid fa-location-arrow" style="margin-top: 5px;"></i></button>
                         </div>
@@ -310,7 +312,7 @@
                         </div>
                     </div>
                     <div class=" card"
-                        style="display:flex;flex:1;height:max-content;border-radius: 10px;margin-top:30px;padding: 15px;">
+                        style="flex:1;height:max-content;border-radius: 10px;margin-top:30px;padding: 15px;">
                         <h5 style="margin: 10px;color: #8C8B8B;">熱門話題</h5>
                         <div style="display: flex;flex-direction: row;margin-left: 15px;">
                             <p style="color: #8C8B8B;margin-top:5px">01</p>
